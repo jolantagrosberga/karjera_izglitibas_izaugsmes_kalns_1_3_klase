@@ -565,7 +565,7 @@ const TEAMS=[
 {icon:'🤝',t:'Palīdzam cits citam',color:'#6E9A68',q:['Ko mēs darām, ja kādam kaut kas neizdodas?','Kā mēs varam palīdzēt jaunam klasesbiedram?']},
 {icon:'📚',t:'Mācības un skolas lietas',color:'#7A4FB0',q:['Kas mums palīdz klasē labi mācīties un nenovērsties?','Kā mēs rūpējamies par savām un klases lietām?']}
 ];
-const STEPS=[null,{i:'🎡',t:'Rats un izaugsmes kalns',s:'Rats un kalns'},{i:'🗺️',t:'Klases spēku karte',s:'Spēku karte'},{i:'👥',t:'Komandu darbs',s:'Komandas'},{i:'🏆',t:'Fināls',s:'Fināls'},{i:'🏠',t:'Klases mājas darbs',s:'Mājas darbs'}];
+const STEPS=[null,{i:'🎡',t:'Rats un izaugsmes kalns',s:'Rats un kalns'},{i:'👥',t:'Komandu darbs',s:'Komandas'},{i:'🗺️',t:'Klases spēku karte',s:'Spēku karte'},{i:'🏆',t:'Fināls',s:'Fināls'},{i:'🏠',t:'Klases mājas darbs',s:'Mājas darbs'}];
 
 /* ================= STĀVOKLIS ================= */
 let state;
@@ -792,14 +792,14 @@ vec3 col=pal*(0.28+diff*0.9);col+=fres*pal*0.9;col+=spec*vec3(1.0);col+=uGlow*pa
 /* ================= NAVIGĀCIJA ================= */
 function goto(i){
  if(i<0||i>5)return;state.screen=i;state.maxScreen=Math.max(state.maxScreen,i);
- const SCR=['s0','s1','s3','s2','s5','s4'];document.querySelectorAll('.screen').forEach(s=>s.classList.toggle('active',s.id===SCR[i]));
+ const SCR=['s0','s1','s2','s3','s5','s4'];document.querySelectorAll('.screen').forEach(s=>s.classList.toggle('active',s.id===SCR[i]));
  const show=i>0;$('top').style.display=show?'flex':'none';$('nav').style.display=show?'flex':'none';
  const cg=i===0||i===5;$('cogBg').style.display=cg?'block':'none';if(cg)Cogs.start();else Cogs.stop();
  if(i!==4)Caldera.stop();
  if(show){$('stIcon').textContent=STEPS[i].i;$('stTitle').textContent=STEPS[i].t;
   $('clsChip').textContent=`${state.cls} · ${state.n} ${plural(state.n)} · Audzinātāja: ${tName()}`;renderSteps();
   $('btnNext').style.visibility=i===5?'hidden':'visible';}
- if(i===1)renderS1();if(i===2)renderS3();if(i===3)renderS2();if(i===4)enterFinal();if(i===5)renderS4();
+ if(i===1)renderS1();if(i===2)renderS2();if(i===3)renderS3();if(i===4)enterFinal();if(i===5)renderS4();
 }
 function renderSteps(){$('steps').innerHTML=STEPS.slice(1).map((s,k)=>{const i=k+1;return`<button class="step ${i===state.screen?'on':''} ${i<state.screen?'done':''}" data-go="${i}">${s.i} ${s.s}</button>`}).join('')}
 $('steps').addEventListener('click',e=>{const b=e.target.closest('[data-go]');if(b)goto(+b.dataset.go)});
