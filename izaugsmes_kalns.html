@@ -153,25 +153,25 @@ span.startBanner.fb{font-size:80px;height:auto;text-align:center}
 .tCtrl{display:flex;gap:10px}
 .tCtrl .btn{font-size:24px}
 .tCtrl .ghost{background:rgba(255,255,255,.15);color:#fff;border:none}
-.teams{display:grid;grid-template-columns:1fr 1fr;grid-template-rows:1fr 1fr;gap:14px;height:476px;margin-top:12px;position:relative}
+.teams{display:grid;grid-template-columns:1fr 1fr;grid-template-rows:1fr 1fr;gap:14px;height:572px;margin-top:12px;position:relative}
 .teams .tmTask{display:none;height:100%;flex-direction:column}.teams.show .tmTask{display:flex}.teams.show .tmSplit{display:none}
 .tmSplit{height:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center}
 .tsIcon{width:230px;height:110px;object-fit:cover;border-radius:16px;font-size:70px;line-height:1;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 12px rgba(0,0,0,.15)}.tsNum{font-size:24px;font-weight:700;color:var(--muted);margin-top:6px}.tsName{font-size:34px;line-height:1.1;padding:0 16px;font-weight:700;color:var(--c)}
 .revealBtn{grid-column:1/3;justify-self:center;box-shadow:0 8px 22px rgba(0,0,0,.2);font-size:26px}
 .teams:not(.show){grid-template-rows:1fr 1fr auto;height:528px}
-#s2:has(.teams:not(.show)) .bubbles{display:none}
+#s2 .bubbles{display:none}
 .teams.show .revealBtn{display:none}
 .teamPrompt{text-align:center;font-size:24px;font-weight:700;color:var(--navy);margin-top:8px;margin-bottom:-4px}
 
 .team{background:#fff;border-radius:18px;border-top:10px solid var(--c);box-shadow:0 4px 16px rgba(128,100,162,.1);padding:8px 18px;overflow:hidden;display:flex;flex-direction:column}
-.tmHead{font-size:25px;font-weight:700;color:var(--c);display:flex;align-items:center;gap:10px}
+.tmHead{font-size:28px;font-weight:700;color:var(--c);display:flex;align-items:center;gap:10px}
 .tmThumb{width:58px;height:38px;object-fit:cover;border-radius:8px;font-size:26px}
-.tmQ{margin:4px 0 6px 26px;font-size:20px;line-height:1.3}
-.tmAdv .lrow{display:flex;align-items:center;justify-content:space-between;gap:10px}.tmAdv label{font-size:18px;font-weight:700;color:var(--ink)}
-.tmAdv textarea{width:100%;font-size:20px;border:2px solid var(--line);border-radius:10px;padding:6px 10px;resize:none;height:62px;margin-top:3px;color:var(--ink)}
+.tmQ{margin:8px 0 12px;font-size:27px;line-height:1.25;font-weight:700;color:var(--ink)}
+.tmAdv .lrow{display:flex;align-items:center;justify-content:space-between;gap:10px}.tmAdv label{font-size:22px;font-weight:700;color:var(--ink)}
+.tmAdv textarea{width:100%;font-size:25px;border:2px solid var(--line);border-radius:10px;padding:8px 12px;resize:none;height:84px;margin-top:3px;color:var(--ink)}
 .tmAdv textarea:focus{outline:none;border-color:var(--c)}
-.agree{flex:none;display:flex;align-items:center;gap:6px;font-size:17px;font-weight:700;color:var(--muted)}
-.agree button{background:var(--bg);color:var(--ink);font-size:17px;font-weight:700;padding:5px 12px;border-radius:10px;border:2px solid var(--line)}
+.agree{flex:none;display:flex;align-items:center;gap:6px;font-size:19px;font-weight:700;color:var(--muted)}
+.agree button{background:var(--bg);color:var(--ink);font-size:20px;font-weight:700;padding:6px 14px;border-radius:10px;border:2px solid var(--line)}
 .agree button.yes{background:#5E8F5A;border-color:#5E8F5A;color:#fff}.agree button.no{background:#D46A62;border-color:#D46A62;color:#fff}
 .bubbles{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:12px}
 .bub{border-radius:14px;padding:10px 16px;font-size:20px;line-height:1.3}
@@ -215,7 +215,7 @@ span.startBanner.fb{font-size:80px;height:auto;text-align:center}
 .qChip .rk{position:absolute;top:-10px;right:-8px;font-size:15px;color:#fff;border-radius:10px;padding:2px 8px;font-weight:700}
 .tPanel h2{font-size:24px;color:var(--navy);line-height:1.15}
 .tPanel .sub{font-size:16px;color:var(--muted);margin-bottom:6px}
-.tRow{display:flex;align-items:center;gap:8px;width:100%;background:var(--bg);border:3px solid transparent;border-radius:12px;padding:3px 8px;margin-bottom:5px;touch-action:none;cursor:grab;user-select:none;text-align:left;font-size:17px;line-height:1.1;color:var(--ink);min-height:40px}
+.tRow{display:flex;align-items:center;gap:8px;width:100%;background:var(--bg);border:3px solid transparent;border-radius:12px;padding:3px 8px;margin-bottom:5px;touch-action:none;cursor:grab;user-select:none;text-align:left;font-size:21px;line-height:1.15;color:var(--ink);min-height:62px;margin-bottom:8px!important}
 .tRow .ti{font-size:20px}
 .tRow .tc{font-weight:700;color:#fff;background:var(--navy);border-radius:50%;width:28px;height:28px;display:flex;align-items:center;justify-content:center;flex:none;font-size:16px}
 .tRow .tTxt{flex:1}
@@ -224,7 +224,7 @@ span.startBanner.fb{font-size:80px;height:auto;text-align:center}
 .tRow.dragging{opacity:.4}
 .tSay{display:block;margin-top:8px;font-size:18px;font-weight:700;color:var(--navy)}
 .tSay textarea{width:100%;height:52px;margin-top:4px;font-size:18px;border:2px solid var(--line);border-radius:10px;padding:5px 10px;resize:none;font-family:inherit;color:var(--ink)}
-.tRow.top{border-color:#E0A100;font-size:21px;font-weight:700;min-height:58px;box-shadow:0 4px 12px rgba(128,100,162,.35)}
+.tRow.top{border-color:#E0A100;font-size:24px;font-weight:700;min-height:76px;box-shadow:0 4px 12px rgba(128,100,162,.35)}
 .tRow .trophy{font-size:30px;margin-right:2px}
 .tRow .tc{background:rgba(255,255,255,.9)!important;color:#30283A!important}
 .tAdd{display:flex;gap:8px;margin-top:4px}
@@ -558,12 +558,12 @@ const QUALITIES=[
 {icon:'🕊️',name:'Strīdu risināšana',tip:'Strīdā vispirms nomierinies, tad pasaki, ko jūti, un uzklausi otru.',adj:'Saprātīgie',color:'#4A90A4',m:{t:'Miera stūrītis',d:'Iekārtojam klasē miera stūrīti un kopā vienojamies, kā tur mierīgi izrunāt strīdu.'}}
 ];
 const MISSION_ALL={icon:'⛰️',t:'Mūsu sapņu kalns',d:'Uzzīmējam lielu kalnu. Katrs uzlīmē uz tā lapiņu ar to, ko grib iemācīties līdz mācību gada beigām.',why:'Visai klasei kopā'};
-const TPOWERS=[['📚','visu saprotami izskaidro'],['🌟','vienmēr uzmundrina'],['😤','dusmojas par mūsu blēņām'],['👂','mūs uzklausa un nomierina'],['😄','ir jautra un smaidīga'],['🤝','palīdz, kad ir grūti'],['⏳','ir ļoti pacietīga'],['🎨','izdomā interesantus darbus']];
+const TPOWERS=[['📚','visu saprotami izskaidro'],['🌟','vienmēr uzmundrina'],['😤','dusmojas par mūsu blēņām'],['👂','mūs uzklausa un nomierina'],['🎨','izdomā interesantus darbus']];
 const TEAMS=[
-{icon:'😊',t:'Veidojam noskaņojumu klasē',color:'#9C8AB8',q:['Kā mēs parasti jūtamies klasē no rīta? 😊 😐 😟','Kas mums palīdz justies labi?']},
-{icon:'🎉',t:'Atbildam par kopīgām aktivitātēm',color:'#D46A62',q:['Ko mums patīk darīt visiem kopā?','Ko jaunu mēs gribētu izmēģināt kopā?']},
-{icon:'🤝',t:'Palīdzam cits citam',color:'#6E9A68',q:['Ko mēs darām, ja kādam kaut kas neizdodas?','Kā mēs varam palīdzēt jaunam klasesbiedram?']},
-{icon:'📚',t:'Mācības un skolas lietas',color:'#7A4FB0',q:['Kas mums palīdz klasē labi mācīties un nenovērsties?','Kā mēs rūpējamies par savām un klases lietām?']}
+{icon:'😊',t:'Veidojam noskaņojumu klasē',color:'#9C8AB8',q:['Kas šobrīd ir svarīgākais, lai mūsu klasē būtu labs noskaņojums?']},
+{icon:'🎉',t:'Atbildam par kopīgām aktivitātēm',color:'#D46A62',q:['Ko šobrīd mēs darām visi kopā?']},
+{icon:'🤝',t:'Palīdzam cits citam',color:'#6E9A68',q:['Kur jau šobrīd mūsu klase palīdz citiem?']},
+{icon:'📚',t:'Mācības un skolas lietas',color:'#7A4FB0',q:['Kas šobrīd ir svarīgākais, lai mūsu klasē varētu labi mācīties?']}
 ];
 const STEPS=[null,{i:'🎡',t:'Rats un izaugsmes kalns',s:'Rats un kalns'},{i:'👥',t:'Komandu darbs',s:'Komandas'},{i:'🗺️',t:'Klases spēku karte',s:'Spēku karte'},{i:'🏆',t:'Fināls',s:'Fināls'},{i:'🏠',t:'Klases mājas darbs',s:'Mājas darbs'}];
 
@@ -892,8 +892,8 @@ $('cardCol').addEventListener('click',e=>{const t=e.target;
 
 /* ================= 2. KOMANDAS ================= */
 function buildTeams(){$('teams').innerHTML=TEAMS.map((t,i)=>`<div class="team" style="--c:${t.color}"><div class="tmSplit">${pimg(IMG_TEAM[i],t.icon,"tsIcon")}<div class="tsNum">${i+1}. komanda</div><div class="tsName">${t.t}</div></div><div class="tmTask"><div class="tmHead">${pimg(IMG_TEAM[i],t.icon,"tmThumb")} ${i+1}. komanda: ${t.t}</div>
- <ol class="tmQ">${t.q.map(q=>`<li>${q}</li>`).join('')}</ol>
- <div class="tmAdv"><div class="lrow"><label>✍️ Jūsu padoms klasei: kā to uzlabot?</label><span class="agree"><span>Klase piekrīt?</span><button data-i="${i}" data-ok="1">👍 Jā</button><button data-i="${i}" data-ok="0">👎 Nē</button></span></div><textarea data-i="${i}" placeholder="Ierakstām komandas padomu…" maxlength="140"></textarea></div></div></div>`).join('')+`<button class="btn big orange revealBtn" id="btnReveal2">✅ Komandas gatavas – rādīt uzdevumus!</button>`;$('btnReveal2').onclick=()=>{state.teamsShown=true;beep(660,.12);beep(990,.2,.1);renderS2()}}
+ <div class="tmQ">❓ ${t.q[0]}</div>
+ <div class="tmAdv"><div class="lrow"><label>💡 Priekšlikums klasei:</label><span class="agree"><span>Klase piekrīt?</span><button data-i="${i}" data-ok="1">👍 Jā</button><button data-i="${i}" data-ok="0">👎 Nē</button></span></div><textarea data-i="${i}" placeholder="Ierakstām komandas priekšlikumu…" maxlength="140"></textarea></div></div></div>`).join('')+`<button class="btn big orange revealBtn" id="btnReveal2">✅ Komandas gatavas – rādīt uzdevumus!</button>`;$('btnReveal2').onclick=()=>{state.teamsShown=true;beep(660,.12);beep(990,.2,.1);renderS2()}}
 buildTeams();
 function renderS2(){$('teams').classList.toggle('show',!!state.teamsShown);$('teamPrompt').style.display=state.teamsShown?'none':'block';$('btnSplit').style.display=state.teamsShown?'inline-block':'none';document.querySelectorAll('#teams textarea').forEach(ta=>ta.value=state.team[+ta.dataset.i].advice);
  document.querySelectorAll('#teams .agree button').forEach(b=>{const t=state.team[+b.dataset.i],v=b.dataset.ok==='1';b.classList.toggle('yes',v&&t.ok===true);b.classList.toggle('no',!v&&t.ok===false)});paintTimer()}
@@ -949,7 +949,7 @@ $('tList').addEventListener('pointerdown',e=>{if(e.target.closest('button'))retu
 addEventListener('pointermove',e=>{if(!tDrag)return;const o=document.elementFromPoint(e.clientX,e.clientY)?.closest('#tList .tRow');document.querySelectorAll('#tList .tRow').forEach(x=>x.classList.toggle('dragOver',x===o&&x!==tDrag.el))});
 addEventListener('pointerup',e=>{if(!tDrag)return;const d=tDrag;tDrag=null;d.el.classList.remove('dragging');const o=document.elementFromPoint(e.clientX,e.clientY)?.closest('#tList .tRow');document.querySelectorAll('#tList .tRow').forEach(x=>x.classList.remove('dragOver'));if(o)moveT(d.i,+o.dataset.t)});
 $('tSaying').addEventListener('input',e=>{state.saying=e.target.value;state.dirty=true});
-function addCustom(){const v=$('tCustom').value.trim();if(!v)return;if(state.tPowers.length>=10)state.tPowers.splice(8,1);state.tPowers.push({icon:'✨',phrase:v});$('tCustom').value='';state.dirty=true;renderS3()}
+function addCustom(){const v=$('tCustom').value.trim();if(!v)return;if(state.tPowers.length>=8)state.tPowers.splice(7,1);state.tPowers.push({icon:'✨',phrase:v});$('tCustom').value='';state.dirty=true;renderS3()}
 $('tAddBtn').onclick=addCustom;$('tCustom').addEventListener('keydown',e=>{if(e.key==='Enter')addCustom()});
 
 /* ================= 5. KLASES MĀJAS DARBS ================= */
@@ -1015,7 +1015,7 @@ function showCert(silent){if($('cert').classList.contains('show'))return;state.c
   <div class="cBox"><h4>${esc(tTitle(false))}</h4><p>${r.teacher?`<b>${r.teacher.icon} ${esc(cap(r.teacher.phrase))}!</b>${r.teacher2.length?` <small>Arī: ${r.teacher2.map(t=>esc(t.phrase)).join(', ')}.</small>`:''}`:''}</p>${state.saying.trim()?`<p class="cSay">💬 „${esc(state.saying.trim())}”</p>`:''}</div>
  </div><div>
   <div class="cBox"><h4>🪜 Kur mums vēl jācenšas</h4>${r.polish.length?`<ul>${r.polish.map(p=>`<li>${p.img?thumb(p.img):''}<b>${esc(p.t)}</b> – ${esc(p.tip)}</li>`).join('')}</ul>`:'<p>Katru dienu kāpjam vēl vienu pakāpienu augstāk!</p>'}</div>
-  <div class="cBox"><h4>💬 Mūsu padomi klasei</h4>${r.advice.length?`<ul>${r.advice.map(a=>`<li>${a.icon} ${esc(a.t)}${a.ok?' <small>✔ klase piekrīt</small>':''}</li>`).join('')}</ul>`:'<p>Padomus pierakstīsim kopā ar audzinātāju.</p>'}</div>
+  <div class="cBox"><h4>💬 Mūsu priekšlikumi klasei</h4>${r.advice.length?`<ul>${r.advice.map(a=>`<li>${a.icon} ${esc(a.t)}${a.ok?' <small>✔ klase piekrīt</small>':''}</li>`).join('')}</ul>`:'<p>Padomus pierakstīsim kopā ar audzinātāju.</p>'}</div>
  </div></div>
  <div class="cFoot"><div class="msg">🚀 Prasmes, ko šodien atradām, jūs pavadīs 4., 5. un pat 9. klasē – un arī darbā, kad būsiet pieauguši!</div>
   <button class="btn ghost" id="btnReplay">🔁 Animācija</button><button class="btn orange" id="btnToHw">🏠 Uz klases mājas darbu →</button></div>`;
@@ -1046,7 +1046,7 @@ function drawPage1(){const r=results(),c=document.createElement('canvas');c.widt
  box(980,310,840,360);x.fillStyle='#8064A2';x.font=`bold 30px ${F}`;x.fillText('🪜 Kur mums vēl jācenšas',1010,360);y=405;
  if(r.polish.length)r.polish.forEach(p=>{x.fillStyle='#30283A';x.font=`bold 26px ${F}`;x.fillText(`${p.icon} ${p.t}`,1010,y);x.font=`23px ${F}`;x.fillStyle='#4A4058';y=wrap(x,p.tip,1050,y+32,740,28,2)+10});
  else{x.font=`26px ${F}`;x.fillStyle='#30283A';x.fillText('Katru dienu kāpjam vēl vienu pakāpienu augstāk!',1010,y)}
- box(980,690,840,290);x.fillStyle='#8064A2';x.font=`bold 30px ${F}`;x.fillText('💬 Mūsu padomi klasei',1010,740);y=785;x.font=`24px ${F}`;x.fillStyle='#30283A';
+ box(980,690,840,290);x.fillStyle='#8064A2';x.font=`bold 30px ${F}`;x.fillText('💬 Mūsu priekšlikumi klasei',1010,740);y=785;x.font=`24px ${F}`;x.fillStyle='#30283A';
  if(r.advice.length)r.advice.forEach(a=>{y=wrap(x,`${a.icon} ${a.t}`,1010,y,780,29,2)+8});else x.fillText('Padomus pierakstīsim kopā ar audzinātāju.',1010,y);
  x.textAlign='center';x.fillStyle='#D46A62';x.font=`bold 27px ${F}`;x.fillText('🚀 Prasmes, ko šodien atradām, jūs pavadīs 4., 5. un pat 9. klasē – un arī darbā, kad būsiet pieauguši!',960,1012);
  return c}
@@ -1070,7 +1070,7 @@ function drawPage2(){const r=results(),c=document.createElement('canvas');c.widt
  let X=1000;y=210;H(tTitle(true),X,y);y+=40;x.font=`22px ${F}`;
  state.tPowers.forEach((t,i)=>{x.fillStyle=i===0?'#D46A62':'#30283A';x.font=`${i===0?'bold ':''}22px ${F}`;x.fillText(`${i+1}. ${cap(t.phrase)}`,X,y);y+=30});
  if(state.saying.trim()){x.font=`italic 22px ${F}`;x.fillStyle='#D46A62';y=wrap(x,`Skolotājas teiciens: „${state.saying.trim()}”`,X,y+8,800,28,2)}
- y+=40;H('👥 Komandu padomi klasei',X,y);y+=38;
+ y+=40;H('👥 Komandu priekšlikumi klasei',X,y);y+=38;
  state.team.forEach((t,i)=>{x.fillStyle='#8064A2';x.font=`bold 21px ${F}`;x.fillText(`${i+1}. ${TEAMS[i].t}${t.ok===true?' – klase piekrīt ✔':t.ok===false?' – klase nepiekrīt':''}`,X,y);x.fillStyle='#30283A';x.font=`21px ${F}`;y=wrap(x,t.advice.trim()||'–',X+24,y+28,780,26,2)+8});
  y=Math.max(y0z+50,0);X=80;H('🏠 Klases mājas darbs',X,y);y+=36;x.fillStyle='#30283A';x.font=`bold 22px ${F}`;x.fillText(r.mission.t+(state.deadline?` · ${state.deadline}`:''),X,y);x.font=`21px ${F}`;wrap(x,r.mission.d,X,y+30,820,26,6);
  x.textAlign='center';x.fillStyle='#6E6380';x.font=`18px ${F}`;x.fillText('Interaktīvo rīku sagatavoja Jaunmārupes pamatskolas pedagoģe-karjeras konsultante Jolanta Grosberga-Gernere.',960,1015);
